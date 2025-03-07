@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import os
 from io import BytesIO
+from xlsxwriter import Workbook
 
 
 # Set page config for title and layout
@@ -17,7 +18,7 @@ load_css("styles.css")
 
 
 # Display the main heading at the top
-st.title(f"🧹Data Cleaner and Convertor")
+st.title(f"Data Cleaner and Convertor")
 st.write("Transform your files between CSV and Excel formats with built-in data cleaning and visualization!")
 
 # Sidebar for file upload and conversion options
